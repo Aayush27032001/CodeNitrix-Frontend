@@ -1,0 +1,72 @@
+.Layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.Layout-left,
+.Layout-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.left-container,
+.right-container {
+  height: 100%;
+  width: 100%;
+}
+
+.Layout-divider {
+  width: 10px;
+  background-color: #ddd;
+  cursor: col-resize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.Layout-divider:hover {
+  background-color: #565656;
+}
+#dots {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #aaa;
+}
+#dots::after,
+#dots::before {
+  position: absolute;
+  margin: 5px 0px;
+  display: block;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #aaa;
+}
+#dots::before {
+  top: 48.5%;
+}
+#dots::after {
+  bottom: 47.5%;
+}
+
+.Layout-left,
+.Layout-right {
+  transition: width 0.3s ease-out;
+}
+
+.Layout-no-transition {
+  transition: none;
+}
+
+.Layout-resize-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
