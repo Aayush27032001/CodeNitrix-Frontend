@@ -72,7 +72,7 @@ const TestForm = () => {
 const LandingPage = () => {
   return (
     <FormLayout
-      image_url={"https://source.unsplash.com/random?topics=technology"}
+      image_url={"https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1274648/retina_1708x683_op-Ten-Front-End-Design-Rules-For-Developers_Luke-Newsletter-d3a7d3e7430ee224cab75104f11342a0.png"}
     >
       <TestForm />
     </FormLayout>
