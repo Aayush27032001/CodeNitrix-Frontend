@@ -39,6 +39,12 @@ const CodeEditor = ({ question }) => {
     }
   };
 
+  useEffect(()=>{
+    if(!localStorage.getItem(question?.id)){
+      setCode("module.exports = function(input) {\n  //Your code goes here\n\n}")
+    }
+  },[question?.id])
+  
   useEffect(() => {
     localStorage.setItem(question?._id, code);
   }, [code, question?._id]);
