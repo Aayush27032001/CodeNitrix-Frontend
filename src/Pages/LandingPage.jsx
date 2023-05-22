@@ -19,7 +19,7 @@ const TestForm = () => {
   };
   return (
     <Box className={styles.testForm} sx={{ position: "relative" }}>
-      {/* <Button
+      <Button
         sx={{ position: "absolute", top: "1rem", right: "1rem" }}
         variant="outlined"
         color="primary"
@@ -28,7 +28,7 @@ const TestForm = () => {
         }}
       >
         Create Test
-      </Button> */}
+      </Button>
       <form onSubmit={submitHandler} style={{ width: "100%" }}>
         <TextField
           label="Name"
