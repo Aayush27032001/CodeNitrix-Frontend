@@ -25,6 +25,7 @@ const CodeEditor = ({ question }) => {
       localStorage.getItem(question?._id) ||
         "module.exports = function(input) {\n  //Your code goes here\n\n}"
     );
+    setResults([])
   }, [question?._id]);
 
   const submitHandler = async () => {

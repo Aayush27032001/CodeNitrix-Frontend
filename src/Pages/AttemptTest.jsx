@@ -148,10 +148,6 @@ const AttemptTest = () => {
           !isNaN(localStorage.getItem("prevTimeout")) &&
           !!localStorage.getItem("prevTimeout")
         ) {
-          console.log(
-            localStorage.getItem("prevEmail"),
-            JSON.parse(localStorage.getItem("user") ?? "{'email':''}")?.email
-          );
           if (
             // eslint-disable-next-line eqeqeq
             JSON.parse(localStorage.getItem("user") ?? "{'email':''}")?.email ==
@@ -207,7 +203,6 @@ const AttemptTest = () => {
         localStorage.setItem("timeout", prev - 1);
         return prev - 1;
       });
-      // console.log(timeRemaining);
     }, 1000);
     return () => {
       localStorage.setItem("prevTimeout", localStorage.getItem("timeout"));
